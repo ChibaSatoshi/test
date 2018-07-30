@@ -23,13 +23,13 @@ public class LoginDAO {
 			ResultSet rs=ps.executeQuery();
 
 			if(rs.next()){
-				dto.setName(rs.getString("user_nsme"));
+				dto.setName(rs.getString("user_name"));
                 dto.setPassword(rs.getString("password"));
 			}
 		}catch(SQLException e){
 			e.printStackTrace();
 		}finally{
-			con.close();
+         con.close();
 		}
 		return dto;
 	}
