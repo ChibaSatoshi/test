@@ -1,0 +1,36 @@
+
+public class Test {
+
+	public static void main(String[] args){
+
+		Person taro =new Person();
+		taro.name="山田太郎";
+		taro.age=20;
+		taro.phoneNumber="000-0000-0000";
+		taro.address="東京";
+		System.out.println(taro.name);
+		System.out.println(taro.age);
+		System.out.println(taro.phoneNumber);
+		System.out.println(taro.address);
+
+		Person a =new Person();
+		a.name="木村次郎";
+		a.age=18;
+		a.phoneNumber="111-1111-1111";
+		a.address="埼玉";
+		System.out.println(a.name);
+		System.out.println(a.age);
+		System.out.println(a.phoneNumber);
+		System.out.println(a.address)
+		;
+		Person b=new Person();
+		b.name ="鈴木花子";
+		b.age=16;
+		b.phoneNumber="222-2222-2222";
+		b.address="神奈川";
+		System.out.println(b.name);
+		System.out.println(b.age);
+		System.out.println(b.phoneNumber);
+		System.out.println(b.address);
+	}
+}

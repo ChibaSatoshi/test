@@ -1,0 +1,87 @@
+.logo{
+    height:auto;
+    max-width:200px;
+}
+
+
+
+
+header ul{
+    background:black;
+    text-align: left;
+    height:60px;
+    width:100%;
+}
+header il{
+    color: white;
+    margin:20px;
+    line-height:60px;
+}
+
+
+
+
+h1{
+    white-space:pre;
+    border-left:4px black solid;
+    border-bottom:2px black solid;
+    height:35px;
+    width:800px; 
+    font-size:25px;
+}
+
+top
+
+
+
+h2{
+    text-align:left;
+    margin: auto;
+    border-bottom: 2px black dotted;
+}
+ul.raight{
+    margin-left:auto;
+    text-align:left;
+    word-spacing: 5px;
+    font-size: 12px;
+}
+
+
+
+p.sita{
+    clear: left;
+    font-size:3px;
+}
+
+
+
+
+.matome{
+    text-align: center;
+    height:px;
+    width:850px;
+    background-color: gray;
+    
+}
+.matome img{
+    width:180px;
+}
+.pic1{
+    margin:10px;
+    display: inline-block;
+    font-size: 11px;
+}
+
+footer{
+    width:100%;
+    height:50px;
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-size: 8px;
+    margin-top: 8px;
+}
+.foot{
+    line-height:50px;
+}
+
