@@ -12,4 +12,6 @@
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="com.internousdev.login.dto.LoginDTO"/>
+<fullyQualifiedTypeName name="com.internousdev.webproj2.util.DBConnector"/>
+<fullyQualifiedTypeName name="com.internousdev.webproj2.dao.HelloStrutsDAO"/>
 </qualifiedTypeNameHistroy>
