@@ -8,7 +8,7 @@ public class DBConnector{
 
 	private static String driverName="com.mysql.jdbc.Driver";
 
-	private static String url="jdbc:mysql://localhost/testdb";
+	private static String url="jdbc:mysql://localhost/chibadb";
 
 	private static String user="root";
 

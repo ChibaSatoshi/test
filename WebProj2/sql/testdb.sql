@@ -1,8 +1,8 @@
-drop database if exists testdb;
+drop database if exists chibadb;
 
-create database testdb;
+create database chibadb;
 
-use testdb;
+use chibadb;
 
 create table users(
 user_id int primary key auto_increment,
