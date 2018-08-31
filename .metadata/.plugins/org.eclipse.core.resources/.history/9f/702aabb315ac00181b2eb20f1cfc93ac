@@ -1,0 +1,27 @@
+package com.internousdev.chiba.action;
+
+import java.sql.SQLException;
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.internousdev.chiba.dao.ItemCreateCompleteDAO;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ItemCreateCompleteAction extends ActionSupport implements SessionAware{
+	private String itemCreate_name;
+	private String itemCreate_price;
+	private String itemCreate_stock;
+	private ItemCreateCompleteDAO itemCreateCompleteDAO = new ItemCreateCompleteDAO();
+	public Map<String ,Object> session;
+
+	public String execute() throws SQLException{
+
+		itemCreateCompleteDAO.createItem(session.get("itemCreate_name"),
+				session.get("itemCreate_price"),
+				session.get("itemCreate_stock"));
+		String result = SUCCESS;
+
+		return result;
+	}
+}

@@ -1,0 +1,32 @@
+package com.internousdev.chiba.action;
+
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ItemCreateConfirmAction extends ActionSupport implements SessionAware{
+	public Map<String ,Object> session;
+	private String itemCreate_name;
+	private String itemCreate_price;
+	private String itemCreate_stock;
+	private String errorMassage;
+
+	public String execute(){
+		String result = SUCCESS;
+
+		if(!(itemCreate_name.equals(""))
+				&& !(itemCreate_price.equals(""))
+				&& !(itemCreate_stock.equals(""))){
+			session.put("itemCreate_name", itemCreate_name);
+			session.put("itemCreate_price", itemCreate_price);
+			session.put("itemCreate_stock", itemCreate_stock);
+
+		}else{
+			setErrorMassage("未記入の項目がありますよ。");
+			result = ERROR;
+		}
+
+	}
+}

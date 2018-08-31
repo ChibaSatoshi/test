@@ -40,10 +40,10 @@ public class LoginAction extends ActionSupport{
 	public void setPassword(String password){
 		this.password=password;
 	}
-	public List<LoginDTO> getloginDTOList(){
+	public List<LoginDTO> getLoginDTOList(){
 		return LoginDTOList;
 	}
 	public void setLoginDTOList(List<LoginDTO> loginDTOList){
-		this.LoginDTOList=loginDTOList;
+		LoginDTOList=loginDTOList;
 	}
 }
